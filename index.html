@@ -3,52 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Main Step: Edit below title -->
-    <title>Theoretical Analysis, Reproduction, and Simulation-Based Exploration of a DNN Add-on Framework for Enhancing Impromptu Trajectory Tracking</title>
 
-    <!-- SEO Meta Tags -->
+    <title>
+      Theoretical Analysis, Reproduction, and Simulation-Based Exploration of a
+      DNN Add-on Framework for Enhancing Impromptu Trajectory Tracking
+    </title>
+
     <meta name="description" content="" />
     <meta
       name="keywords"
       content="impromptu trajectory tracking, neural networks"
     />
-    <!-- <meta name="author" content="Research Paper Platform" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="robots"
-      content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-    /> -->
 
-    <!-- Open Graph Meta Tags (For Social Media Sharing) -->
-    <!-- <meta
-      property="og:title"
-      content="Research Papers - Explore Cutting-Edge Research"
-    />
-    <meta
-      property="og:description"
-      content=""
-    />
-    <meta property="og:image" content="path-to-your-image.jpg" />
-    <meta property="og:url" content="https://www.yourwebsite.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Research Paper Platform" /> -->
-
-    <!-- Twitter Meta Tags (For Twitter Sharing) -->
-    <!-- <meta
-      name="twitter:title"
-      content="Research Papers - Explore Cutting-Edge Research"
-    />
-    <meta
-      name="twitter:description"
-      content=""
-    />
-    <meta name="twitter:image" content="path-to-your-image.jpg" />
-    <meta name="twitter:card" content="summary_large_image" /> -->
-
-    <!-- Canonical Link -->
-    <!-- <link rel="canonical" href="https://www.yourwebsite.com" /> -->
-
-    <!-- Favicon for different platforms -->
     <link
       rel="icon"
       href="Assets/Favicon/icons8-research-color-16.png"
@@ -81,494 +47,710 @@
     />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- MathJax for beautiful equation rendering -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+            ["\\(", "\\)"],
+            ["$", "$"]
+          ],
+          displayMath: [["\\[", "\\]"]],
+          tags: "ams"
+        },
+        svg: {
+          fontCache: "global"
+        }
+      };
+    </script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+    ></script>
   </head>
+
   <body>
     <nav class="nav">
       <a href="#abstract">Abstract</a>
       <a href="#introduction">Introduction</a>
-      <a href="#methodology">Methodology</a>
-      <a href="#results">Results</a>
+      <a href="#related-work">Related Work</a>
+      <a href="#theory">Theory</a>
+      <a href="#simulation">Simulation</a>
+      <a href="#exploration">Exploration</a>
       <a href="#conclusion">Conclusion</a>
+      <a href="#references">References</a>
+
       <button class="toggle-btn" onclick="toggleDarkMode()">
         Toggle Dark Mode
       </button>
     </nav>
 
-    <!-- Step 1 Start: Header Part -->
-
-    <!-- 
-    Remove if not applicable
-    Edit below todo text
-    Add URL link by removing # for each authers. Link can be GitHub, LinkedIn, Google Schooler, Website or other
-    -->
-
     <div class="header">
-      <h1>Theoretical Analysis, Reproduction, and Simulation-Based Exploration of a DNN Add-on Framework for Enhancing Impromptu Trajectory Tracking</h1>
+      <h1>
+        Theoretical Analysis, Reproduction, and Simulation-Based Exploration of
+        a DNN Add-on Framework for Enhancing Impromptu Trajectory Tracking
+      </h1>
+
       <div class="authors">
-        <p>
-          <a href="#">James Yuan</a><sup>1</sup><!--,
-          <a href="#">TODO: Author name 2</a><sup>*1,3</sup>,
-          <a href="#">TODO: Author name 3</a><sup>*2</sup>,
-          <a href="#">TODO: Author name 4</a><sup>*1</sup>,
-          <a href="#">TODO: Author name 5</a><sup>2</sup>,
-          <a href="#">TODO: Author name 6</a><sup>1</sup>-->
-        </p>
-        <p>
-          <sup>1</sup>Simon Fraser University<!-- &nbsp;&nbsp; <sup>2</sup>TODO:
-          University name 2&nbsp;&nbsp; <sup>3</sup>TODO: University name 3-->
-        </p>
-        <p>
-          <sup>1</sup
-          ><a href="mailto:jya276@sfu.ca">jya276@sfu.ca</a><!--,
-          <sup>2</sup
-          ><a href="mailto:example2@email.com">TODO:email2@email.com</a>-->
-        </p>
-        <p>
-          <!--<em>*Equal Contribution</em-->
-          ><!-- Remove if not applicable -->
-        </p>
-        <!--<p>📌 Conference on TODO: Conference name, 2023 (Oral Talk)</p>
-        <p>📌 Presented at TODO: Conference name 2024, Yokohama, Japan.</p>-->
+        <p><a href="#"></a><sup>James Yuan</sup></p>
+        <p><sup>Simon Fraser University</sup></p>
+        <p><sup></sup><a href="mailto:jya276@sfu.ca"></a>jya276@sfu.ca</p>
       </div>
     </div>
-
-    <!-- Step 1 End: Header Part -->
-    <!-- Step 2 Start: Button for links -->
-
-    <!-- 
-    Add URL links for each buttons according to name mentioned
-    Remove # and add the link
-    Add new button link if required
-    Remove this step if not applicable
-    -->
 
     <div class="buttons">
-      <a href="https://www.dynsyslab.org/wp-content/papercite-data/pdf/zhou-ijrr20.pdf" target="_blank">Paper</a>
-      <!--<a href="#" target="_blank">Videos</a>-->
-      <a href="#" target="_blank">Code</a>
-      <!--<a href="#" target="_blank">Dataset</a>-->
-      <!--<a href="#" target="_blank">Model</a>-->
-      <!--<a href="#bibtex">BibTex</a>-->
+      <a
+        href="https://www.dynsyslab.org/wp-content/papercite-data/pdf/zhou-ijrr20.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Paper</a
+      >
+
+      <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+
+      <a href="Assets/poster.png" target="_blank" rel="noopener noreferrer"
+        >Poster</a
+      >
     </div>
-
-    <!-- Step 2 End: Button for links -->
-
-    <!-- Step 3 Start: Add your paper abstract -->
-
-    <!-- 
-    Please do not remove below H2 heading tag. Add your HTML code after H2 HTML tag or add text inside P HTML tag. 
-    Remove this step if not applicable
-    -->
-
-    <!-- Single YouTube Video 
-    <div class="video-section">
-      <h3>Demo Video</h3>
-      <div class="video-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/ysFav0b472w?si=Rxxp3R6_tkBXAEmP"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <p>
-        TODO: This is the short explanation paragraph of the video. Add your
-        paragraph here if required
-      </p>
-    </div>-->
 
     <div class="abstract" id="abstract">
       <h2>Abstract</h2>
-      <p>This project studies a DNN add-on framework for improving impromptu trajectory tracking. The main goal is to understand and reproduce the theoretical and simulation results in [1], with a focus on the inverse-dynamics interpretation of the DNN module, the related necessary conditions, and the input selection principles. Since the original quadrotor platform is hard to reproduce directly, this project focuses on simulation-based reproduction and further exploration. Section 5 of [1] is reproduced using MATLAB, and the results are highly consistent with those reported in the original paper. In addition, several extended simulations are conducted to examine the effect of input design, robustness to trajectory scaling, and generalization to hand-drawn letter trajectories. The results show that the DNN add-on can significantly reduce tracking error with low computational cost when the theoretical conditions are satisfied, while also revealing some practical boundaries of its robustness in extreme cases.</p>
+
+      <p>
+        This project studies a DNN add-on framework for improving impromptu
+        trajectory tracking. The main goal is to understand and reproduce the
+        theoretical and simulation results in
+        <a class="citation" href="#ref-1">[1]</a>, with a focus on the
+        inverse-dynamics interpretation of the DNN module, the related necessary
+        conditions, and the input selection principles. Since the original
+        quadrotor platform is hard to reproduce directly, this project focuses
+        on simulation-based reproduction and further exploration. Section 5 of
+        <a class="citation" href="#ref-1">[1]</a> is reproduced using MATLAB,
+        and the results are highly consistent with those reported in the
+        original paper. In addition, several extended simulations are conducted
+        to examine the effect of input design, robustness to trajectory scaling,
+        and generalization to hand-drawn letter trajectories. The results show
+        that the DNN add-on can significantly reduce tracking error with low
+        computational cost when the theoretical conditions are satisfied, while
+        also revealing some practical boundaries of its robustness in extreme
+        cases.
+      </p>
     </div>
-
-    <!-- Step 3 End: Add your paper abstract -->
-
-    <!-- Step 4 Start: Add your paper introduction -->
-
-    <!-- 
-    Please do not remove below H2 heading tag. Add your HTML code after H2 HTML tag or add text inside P HTML tag. 
-    Remove this step if not applicable
-    -->
 
     <div class="content-section" id="introduction">
       <h2>Introduction</h2>
-      <p>Trajectory tracking is an important problem in robotic control and has been widely applied in both industrial and civilian domains. Some examples include high-precision robotic manipulators and unmanned aerial vehicles (e.g., quadrotors) for search and rescue. In this project, we reproduce the study in reference [1], which investigates a particular setting of this problem, referred to as impromptu trajectory tracking.</p>
-	  <p>The core idea of [1] is to use a DNN as an add-on module placed before a stabilized baseline control system to improve impromptu trajectory tracking. In accordance with the proposal and practical constraints, the project mainly consists of three parts.<br>
-		<li>1) Theory. Since the theoretical part accounts for roughly 35% of paper [1], the theoretical sections of the paper will be analyzed in detail. The more difficult arguments will be further derived and clarified in this final report.</li>
-		<li>2) Reproduction. Section 5 of [1] was fully reproduced in simulation.</li>
-		<li>3) Simulation-based exploration. The project will demonstrate the generalization capability of the proposed method and exploring its potential boundaries.</li>
-		</p>
+
+      <p>
+        Trajectory tracking is an important problem in robotic control and has
+        been widely applied in both industrial and civilian domains. Some
+        examples include high-precision robotic manipulators and unmanned aerial
+        vehicles, such as quadrotors, for search and rescue. In this project, we
+        reproduce the study in reference
+        <a class="citation" href="#ref-1">[1]</a>, which investigates a
+        particular setting of this problem, referred to as impromptu trajectory
+        tracking.
+      </p>
+
+      <p>
+        The core idea of <a class="citation" href="#ref-1">[1]</a> is to use a
+        DNN as an add-on module placed before a stabilized baseline control
+        system to improve impromptu trajectory tracking. In accordance with the
+        proposal and practical constraints, the project mainly consists of three
+        parts.
+      </p>
+
+      <ol>
+        <li>
+          <strong>Theory.</strong> Since the theoretical part accounts for
+          roughly 35% of paper <a class="citation" href="#ref-1">[1]</a>, the
+          theoretical sections of the paper are analyzed in detail. The more
+          difficult arguments are further derived and clarified in this final
+          report.
+        </li>
+
+        <li>
+          <strong>Reproduction.</strong> Section 5 of
+          <a class="citation" href="#ref-1">[1]</a> was fully reproduced in
+          simulation.
+        </li>
+
+        <li>
+          <strong>Simulation-based exploration.</strong> The project
+          demonstrates the generalization capability of the proposed method and
+          explores its potential boundaries.
+        </li>
+      </ol>
     </div>
 
-    <!-- Step 4 End: Add your paper introduction -->
-
-    <!-- Step 5 Start: Add your paper methodology -->
-
-    <!-- 
-    Please do not remove below H2 heading tag. Add your HTML code after H2 HTML tag or add text inside P HTML tag. 
-    Remove this step if not applicable
-    -->
-
-    <div class="content-section" id="related_work">
+    <div class="content-section" id="related-work">
       <h2>Summary of Related Work</h2>
-      <p>TODO: Add Methodology</p>
-	  
-	 
 
-	<head>
-	<meta charset="UTF-8">
-	<style>
-	table {
-	  border-collapse: collapse;
-	  width: 700px;
-	  font-family: Arial, sans-serif;
-	}
+      <p>
+        The proposed DNN add-on approach is related to several inverse-control
+        and learning-based control methods. The following table summarizes their
+        main strengths and limitations.
+      </p>
 
-	th {
-	  background-color: #4f79a7;
-	  color: white;
-	  padding: 10px;
-	  font-size: 18px;
-	}
+      <table class="comparison-table">
+        <tr>
+          <th>Method</th>
+          <th>Main strengths / limitations</th>
+        </tr>
 
-	td {
-	  border: 1px solid #999;
-	  padding: 10px;
-	  vertical-align: top;
-	}
+        <tr class="row-light">
+          <td class="method">Direct inverse control</td>
+          <td>
+            ✓ Simple<br />
+            ✗ Less robust to disturbances<br />
+            ✗ Training not directly aligned with tracking error
+          </td>
+        </tr>
 
-	.method {
-	  width: 200px;
-	  font-weight: bold;
-	  background-color: #c9d6e8;
-	}
+        <tr>
+          <td class="method">Feedback-error learning</td>
+          <td>
+            ✓ More robust<br />
+            ✓ More goal-directed<br />
+            ✗ Requires plant-in-the-loop training
+          </td>
+        </tr>
 
-	.row-light {
-	  background-color: #dfe7f3;
-	}
+        <tr class="row-light">
+          <td class="method">Adaptive inverse control</td>
+          <td>
+            ✓ Online adaptation<br />
+            ✓ Stability guarantees<br />
+            ✗ High online cost
+          </td>
+        </tr>
 
-	.highlight {
-	  background-color: #17a2cc;
-	  color: black;
-	  font-weight: bold;
-	}
-	</style>
-	</head>
-
-	<body>
-
-	<table>
-	  <tr>
-		<th>Method</th>
-		<th>Main strengths / limitations</th>
-	  </tr>
-
-	  <tr class="row-light">
-		<td class="method">Direct inverse control</td>
-		<td>
-		  ✓ Simple<br>
-		  ✗ Less robust to disturbances<br>
-		  ✗ Training not directly aligned with tracking error
-		</td>
-	  </tr>
-
-	  <tr>
-		<td class="method">Feedback-error learning</td>
-		<td>
-		  ✓ More robust<br>
-		  ✓ More goal-directed<br>
-		  ✗ Requires plant-in-the-loop training
-		</td>
-	  </tr>
-
-	  <tr class="row-light">
-		<td class="method">Adaptive inverse control</td>
-		<td>
-		  ✓ Online adaptation<br>
-		  ✓ Stability guarantees<br>
-		  ✗ High online cost
-		</td>
-	  </tr>
-
-	  <tr class="highlight">
-		<td>Proposed<br>DNN add-on<br>approach</td>
-		<td>
-		  ✓ Uses a stabilized closed-loop baseline<br>
-		  ✓ Less prone to instability<br>
-		  ✓ Easier to train<br>
-		  ✓ Better suited for impromptu trajectory tracking
-		</td>
-	  </tr>
-	</table>
-
-	</body>
-	  
+        <tr class="highlight">
+          <td class="method">Proposed DNN add-on approach</td>
+          <td>
+            ✓ Uses a stabilized closed-loop baseline<br />
+            ✓ Less prone to instability<br />
+            ✓ Easier to train<br />
+            ✓ Better suited for impromptu trajectory tracking
+          </td>
+        </tr>
+      </table>
     </div>
 
-    <!-- Step 5 End: Add your paper methodology -->
+    <div class="content-section" id="theory">
+      <h2>Theory</h2>
 
-    <!-- Step 6 Start: Add your paper results -->
+      <p>
+        In <a class="citation" href="#ref-1">[1]</a>, the baseline system is
+        modeled as a multi-input multi-output system. Eq. (1) is a linear
+        time-invariant model. The state-space model is:
+      </p>
 
-    <!-- 
-    Please do not remove below H2 heading tag. Add your HTML code after H2 HTML tag or add text inside P HTML tag. 
-    Remove this step if not applicable
-    Below have pre-build code for:
-    -> 3 Images Carousel
-    -> 3 Videos Carousel
-    -> Single YouTube Video
-    -> YouTube Video List
-    If you do not need those, remove them.
-    How to add YouTube Video:
-    -> Go to the video page
-    -> Click Share Button and Click <> Mark
-    -> This will give <iframe></iframe> tag code
-    -> Replace below <iframe></iframe> tag with your code
-    -->
-
-    <div class="content-section" id="Theory">
-		<h2>Results</h2>
-		
-		<p>In [1], the baseline system is modeled as a multi-input–multi-output (MIMO) system, and Eq. (1) is a linear time-invariant model. The state space model is:</p>
-
-		<p>
-			<b>Linear Time-Invariant Model:</b><br>
-			<code>
-				x(k+1) = A ⋅ x(k) + B ⋅ u(k)<br>
-				y(k) = C ⋅ x(k)
-			</code>
-		</p>
-
-		<p>Here, the nonnegative integer <code>k</code> is the discrete-time index, <code>x ∈ R^n</code> is the system state, <code>u ∈ R^m</code> is the reference signal (control), and <code>y ∈ R^m</code> is the system output. <code>A</code>, <code>B</code>, and <code>C</code> are constant. The explicit form of Eq. (1) is shown below, which is more convenient for coding:</p>
-
-
-		<p>The nonlinear version of Eq. (1) is given in Eq. (2). Its state-space model is:</p>
-
-		<p>
-			<b>Nonlinear Model:</b><br>
-			<code>
-				x(k+1) = f(x(k)) + g(x(k)) ⋅ u(k)<br>
-				y(k) = h(x(k))
-			</code>
-		</p>
-		<h3>Assumptions</h3>
-		<ul>
-			<li><b>(A1) Stable:</b> Bounded inputs lead to bounded states.</li>
-			<li><b>(A2) Future desired trajectory:</b> The future desired trajectory is available.</li>
-			<li><b>(A3) DNN Smoothness:</b> The DNN has smooth output with respect to inputs (globally Lipschitz).</li>
-		</ul>
-
-		<h3>Definitions</h3>
-		<ul>
-			<li><b>Vector Relative Degree (VRR):</b> The number of steps before some input <code>u</code> affects some output <code>y</code>.</li>
-			<li><b>Full-Rank Decoupling Matrix:</b> Outputs respond independently enough to solve for the control input.</li>
-		</ul>
-	</div>
-	
-	<div class="content-section" id="Simulation">
-	  <h2>Simulation</h2>
-
-	  <p>
-		We reproduce the simulation presented in Section 5 of [1] to illustrate
-		Insights 4.1, 4.2, and 4.3. Two linear MIMO baseline closed-loop systems
-		are considered, with the same state equation as below.
-	  </p>
-
-	  <div class="equation">
-		\[
-		x(k+1)=
-		\begin{bmatrix}
-		0.2 & 1 & 0 \\
-		0 & 0.5 & 0 \\
-		0 & 0 & 0.6
-		\end{bmatrix}x(k)
-		+
-		\begin{bmatrix}
-		0 & 0 \\
-		1 & 0 \\
-		0 & 0.5
-		\end{bmatrix}u(k)
-		\]
-	  </div>
-
-	  <p>
-		It is not hard to see that the matrix \(A\) of the baseline system is
-		upper triangular, so its eigenvalues are its diagonal entries. Moreover,
-		since all these eigenvalues lie inside the unit circle \((<1)\), they
-		correspond to three stable poles. The output equations of the two systems
-		are defined in Eq. (29) and (30), respectively.
-	  </p>
-
-	  <div class="equation">
-		\[
-		y(k)=
-		\begin{bmatrix}
-		0.35 & 0.35 & 0 \\
-		0 & 0 & 0.5
-		\end{bmatrix}x(k)
-		\tag{29}
-		\]
-	  </div>
-
-	  <div class="equation">
-		\[
-		y(k)=
-		\begin{bmatrix}
-		-0.35 & 0.35 & 0 \\
-		0 & 0 & 0.5
-		\end{bmatrix}x(k)
-		\tag{30}
-		\]
-	  </div>
-	</div>
-
-    <!-- 3 Images Carousel -->
-    <h3>Image Gallery</h3>
-    <div class="carousel-container" id="imageCarousel">
-      <div class="carousel-track">
-        <div class="carousel-slide">
-          <img src="Assets/Figure2Reproduction.png" alt="Slide 1" />
-        </div>
-        <div class="carousel-slide">
-          <img src="Assets/Figure2Paper.png" alt="Slide 2" />
-        </div>
-        <div class="carousel-slide">
-          <img src="Assets/Figure3Reproduction.png" alt="Slide 3" />
-        </div>
-        <div class="carousel-slide">
-          <img src="Assets/Figure3Paper.png" alt="Slide 4" />
-        </div>
-        <div class="carousel-slide">
-          <img src="Assets/Figure4Reproduction.png" alt="Slide 5" />
-        </div>
-        <div class="carousel-slide">
-          <img src="Assets/Figure4Paper.png" alt="Slide 6" />
-        </div>
-        <div class="carousel-slide">
-          <img src="Assets/Fig.5.jpg" alt="Slide 7" />
-        </div>
-        <div class="carousel-slide">
-          <img src="Assets/Fig.6.jpg" alt="Slide 8" />
-        </div>
+      <div class="equation">
+        \[
+        \begin{aligned}
+        x(k+1) &= A x(k) + B u(k), \\
+        y(k) &= C x(k).
+        \end{aligned}
+        \]
       </div>
-      <button class="carousel-button prev">←</button>
-      <button class="carousel-button next">→</button>
-      <div class="carousel-indicators"></div>
+
+      <p>
+        Here, the nonnegative integer \(k\) is the discrete-time index,
+        \(x \in \mathbb{R}^{n}\) is the system state,
+        \(u \in \mathbb{R}^{m}\) is the reference signal or control input, and
+        \(y \in \mathbb{R}^{m}\) is the system output. The matrices \(A\),
+        \(B\), and \(C\) are constant matrices.
+      </p>
+
+      <p>
+        The nonlinear version of Eq. (1) is given in Eq. (2). Its state-space
+        model is:
+      </p>
+
+      <div class="equation">
+        \[
+        \begin{aligned}
+        x(k+1) &= f(x(k)) + g(x(k))u(k), \\
+        y(k) &= h(x(k)).
+        \end{aligned}
+        \]
+      </div>
+
+      <h3>Assumptions</h3>
+
+      <ul>
+        <li>
+          <strong>(A1) Stability:</strong> Bounded inputs lead to bounded
+          states.
+        </li>
+        <li>
+          <strong>(A2) Future desired trajectory:</strong> The future desired
+          trajectory is available.
+        </li>
+        <li>
+          <strong>(A3) DNN smoothness:</strong> The DNN has smooth output with
+          respect to inputs and is globally Lipschitz.
+        </li>
+      </ul>
+
+      <h3>Definitions</h3>
+
+      <ul>
+        <li>
+          <strong>Vector Relative Degree:</strong> The number of steps before an
+          input \(u\) affects an output \(y\).
+        </li>
+        <li>
+          <strong>Full-Rank Decoupling Matrix:</strong> Outputs respond
+          independently enough to solve for the control input.
+        </li>
+      </ul>
     </div>
 
-    
+    <div class="content-section" id="simulation">
+      <h2>Simulation</h2>
 
-    <!-- Step 6 End: Add your paper results -->
+      <p>
+        We reproduce the simulation presented in Section 5 of
+        <a class="citation" href="#ref-1">[1]</a> to illustrate Insights 4.1,
+        4.2, and 4.3. Two linear MIMO baseline closed-loop systems are
+        considered, with the same state equation as below.
+      </p>
 
-    <!-- Step 7 Start: Add your paper conclusion -->
+      <div class="equation">
+        \[
+        x(k+1)=
+        \begin{bmatrix}
+        0.2 & 1 & 0 \\
+        0 & 0.5 & 0 \\
+        0 & 0 & 0.6
+        \end{bmatrix}x(k)
+        +
+        \begin{bmatrix}
+        0 & 0 \\
+        1 & 0 \\
+        0 & 0.5
+        \end{bmatrix}u(k).
+        \]
+      </div>
 
-    <!-- 
-    Please do not remove below H2 heading tag. Add your HTML code after H2 HTML tag or add text inside P HTML tag. 
-    Remove this step if not applicable
-    -->
+      <p>
+        It is not hard to see that the matrix \(A\) of the baseline system is
+        upper triangular, so its eigenvalues are its diagonal entries. Moreover,
+        since all these eigenvalues lie inside the unit circle, they correspond
+        to three stable poles. The output equations of the two systems are
+        defined in Eq. (29) and Eq. (30), respectively.
+      </p>
+
+      <div class="equation">
+        \[
+        y(k)=
+        \begin{bmatrix}
+        0.35 & 0.35 & 0 \\
+        0 & 0 & 0.5
+        \end{bmatrix}x(k).
+        \tag{29}
+        \]
+      </div>
+
+      <div class="equation">
+        \[
+        y(k)=
+        \begin{bmatrix}
+        -0.35 & 0.35 & 0 \\
+        0 & 0 & 0.5
+        \end{bmatrix}x(k).
+        \tag{30}
+        \]
+      </div>
+
+      <h3>Simulation Figures</h3>
+
+      <p>
+        The following figures are placed in the simulation section because they
+        correspond to the reproduced simulation results.
+      </p>
+
+      <div class="carousel-container" id="imageCarousel">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <figure>
+              <img
+                src="Assets/Figure2Reproduction.png"
+                alt="Figure 2 reproduction"
+              />
+              <figcaption>Figure 2 reproduction</figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-slide">
+            <figure>
+              <img src="Assets/Figure2Paper.png" alt="Figure 2 from paper" />
+              <figcaption>Figure 2 from paper</figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-slide">
+            <figure>
+              <img
+                src="Assets/Figure3Reproduction.png"
+                alt="Figure 3 reproduction"
+              />
+              <figcaption>Figure 3 reproduction</figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-slide">
+            <figure>
+              <img src="Assets/Figure3Paper.png" alt="Figure 3 from paper" />
+              <figcaption>Figure 3 from paper</figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-slide">
+            <figure>
+              <img
+                src="Assets/Figure4Reproduction.png"
+                alt="Figure 4 reproduction"
+              />
+              <figcaption>Figure 4 reproduction</figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-slide">
+            <figure>
+              <img src="Assets/Figure4Paper.png" alt="Figure 4 from paper" />
+              <figcaption>Figure 4 from paper</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <button class="carousel-button prev" aria-label="Previous image">
+          ←
+        </button>
+        <button class="carousel-button next" aria-label="Next image">→</button>
+        <div class="carousel-indicators"></div>
+      </div>
+    </div>
+
+    <div class="content-section" id="exploration">
+      <h2>Exploration</h2>
+
+      <h3>A. Simulation 3: Impact of Input Dimension Modification</h3>
+
+      <p>
+        Resuming from Section V.B, Simulation 2, we modify the original model by
+        decreasing and increasing the orders of both \(u\) and \(y\) by one,
+        respectively, and observe the resulting changes in the tracking error.
+        The corresponding inputs become:
+      </p>
+
+      <div class="equation">
+        \[
+        I =
+        \left\{
+        y_1(k-1:k+1),
+        y_2(k-1:k+1),
+        u(k-1)
+        \right\}
+        \]
+      </div>
+
+      <div class="equation">
+        \[
+        I =
+        \left\{
+        y_1(k-2:k+2),
+        y_2(k-2:k+2),
+        u(k-3:k-1)
+        \right\}
+        \]
+      </div>
+
+      <p>
+        It should be noted that, since the predicted variable is \(u(k)\), it
+        cannot be included in the input. The results are shown in Table III.
+      </p>
+
+      <div class="table-wrapper">
+        <table class="results-table">
+          <caption>
+            Table III. Impact of Input Dimension Modifications on Tracking Error
+          </caption>
+
+          <thead>
+            <tr>
+              <th>Case</th>
+              <th>Input Dimension</th>
+              <th>Training RMSE</th>
+              <th>Validation RMSE</th>
+              <th>Control RMSE</th>
+              <th>Baseline Tracking Error</th>
+              <th>DNN Tracking Error</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Decrease \(y\) and \(u\) by One Order</td>
+              <td>8</td>
+              <td>\(4.8 \times 10^{-3}\)</td>
+              <td>\(4.7 \times 10^{-3}\)</td>
+              <td>\(1.8 \times 10^{-2}\)</td>
+              <td>1.0</td>
+              <td>\(6.3 \times 10^{-3}\)</td>
+            </tr>
+
+            <tr>
+              <td>Original</td>
+              <td>12</td>
+              <td>\(4.9 \times 10^{-3}\)</td>
+              <td>\(5.1 \times 10^{-3}\)</td>
+              <td>\(9.8 \times 10^{-3}\)</td>
+              <td>1.0</td>
+              <td>\(3.3 \times 10^{-3}\)</td>
+            </tr>
+
+            <tr>
+              <td>Increase \(y\) and \(u\) by One Order</td>
+              <td>16</td>
+              <td>\(1.1 \times 10^{-2}\)</td>
+              <td>\(1.1 \times 10^{-2}\)</td>
+              <td>\(3.7 \times 10^{-2}\)</td>
+              <td>1.0</td>
+              <td>\(1.4 \times 10^{-2}\)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        First, we can see that the original version achieves the best tracking
+        performance, while either increasing or decreasing the order by one
+        worsens the result. This indicates that the original window length is
+        the most appropriate, and the theoretical prediction is correct.
+      </p>
+
+      <p>
+        Second, reducing the order by one causes less performance drop than
+        increasing the order by one. This suggests that redundant information
+        does not help. In contrast, the input model in paper
+        <a class="citation" href="#ref-2">[2]</a> indeed contains many
+        redundant high-order terms. Therefore, it is understandable why paper
+        <a class="citation" href="#ref-1">[1]</a> can reduce the input
+        dimension by two-thirds while still achieving better performance.
+      </p>
+
+      <p>
+        Finally, we can also see that the model with one order reduced has a
+        better RMSE on the validation set than on the testing set, but its
+        actual tracking performance is poor. This may be due to model
+        oversimplification or random effects.
+      </p>
+
+      <h3>B. Simulation 4: Robustness to Scaling</h3>
+
+      <p>
+        As part of the study of generalization ability,
+        <a class="citation" href="#ref-1">[1]</a> uses a scaling method to
+        examine whether changes in velocity affect tracking robustness. They
+        conclude that, when the speed increases from 0.1 m/s to 0.8 m/s with a
+        step size of 0.1 m/s, corresponding to an eightfold increase, the
+        tracking error of the baseline model increases by about one time, while
+        the proposed model remains robust.
+      </p>
+
+      <p>
+        Here, we apply scaling to the frequency in order to achieve an
+        equivalent increase in velocity. Specifically, we introduce:
+      </p>
+
+      <div class="equation">
+        \[
+        \text{speedUpFactor} =
+        \left[
+        2^0, 2^1, \ldots, 2^{10}
+        \right]
+        \]
+      </div>
+
+      <p>
+        to simulate the speed increase. The results are plotted in Figure 5.
+      </p>
+
+      <figure class="single-figure">
+        <img src="Assets/Fig.5.jpg" alt="Figure 5 robustness to scaling" />
+        <figcaption>Figure 5. Robustness to trajectory scaling.</figcaption>
+      </figure>
+
+      <p>
+        Similar to <a class="citation" href="#ref-1">[1]</a>, the DNN add-on
+        still shows strong robustness when
+        \(\text{speedUpFactor} \leq 32 = 2^5\). Since the baseline model in this
+        simulation is already poor enough, although its performance also becomes
+        worse as the speed increases, the change is not as obvious as that in
+        <a class="citation" href="#ref-1">[1]</a>.
+      </p>
+
+      <p>
+        Due to the physical speed limit of the quadrotor, it is practically
+        impossible to conduct a 100- to 1000-fold speed increase in real
+        experiments. This simulation suggests that the DNN add-on module may be
+        more robust to scaling than expected.
+      </p>
+
+      <p>
+        Another worth mentioning observation is that the scaling boundary found
+        in this simulation seems to appear around
+        \(\text{speedUpFactor}=64\text{--}128\). At this point, the
+        higher-frequency desired trajectory \(y_{d,2}(t)\) is accelerated from
+        0.091 Hz to about 5.8--11.6 Hz, while our sampling frequency is 70 Hz.
+        According to the Nyquist--Shannon sampling theorem, the theoretical
+        upper limit should be close to \(70/2=35\) Hz. At this stage, we do not
+        have a satisfactory explanation for this phenomenon.
+      </p>
+
+      <p>
+        We hope that this discussion can extend the robustness analysis in the
+        original paper <a class="citation" href="#ref-1">[1]</a> and further
+        identify the boundary of such robustness.
+      </p>
+
+      <h3>C. Simulation 5: Hand-drawn Trajectory</h3>
+
+      <p>
+        Finally, we test whether the model in Section V.B, Simulation 2 can
+        demonstrate generalization ability on variable-velocity hand-drawn
+        trajectories, as a response to the entire Section 6 of
+        <a class="citation" href="#ref-1">[1]</a>. The hand-drawn trajectories
+        consist of the 26 lowercase English letters, drawn with a mouse and
+        recorded as data. The duration is normalized to 30 s, while the
+        trajectory length is normalized and translated to the center.
+      </p>
+
+      <figure class="single-figure">
+        <img
+          src="Assets/Fig.6.jpg"
+          alt="Figure 6 hand-drawn trajectory results"
+        />
+        <figcaption>
+          Figure 6. Tracking results on hand-drawn letter trajectories.
+        </figcaption>
+      </figure>
+
+      <p>
+        The simulation results in Figure 6 show that the DNN add-on reduces the
+        tracking error by an average of 92.6% compared with the baseline, with a
+        standard deviation of 2.5%, a minimum reduction of 88.4% for letter
+        \(h\), and a maximum reduction of 98.1% for letter \(d\). These results
+        indicate that the DNN add-on module exhibits good generalization ability
+        on unseen, variable-velocity trajectories.
+      </p>
+    </div>
 
     <div class="content-section" id="conclusion">
       <h2>Conclusion</h2>
-      <p>In this project, we reproduced and analyzed the DNN add-on framework proposed in [1] for impromptu trajectory tracking. The theoretical part was reviewed in detail. The simulation results in Section 5 were also successfully reproduced. Further simulation-based exploration confirms the good generalization ability of the DNN add-on module. The robustness under extreme conditions was discussed and remained an open question. Overall, this project supports the main conclusion of [1]: a theory-guided DNN add-on design can improve tracking performance effectively while keeping the framework relatively simple and economical.</p>
+
+      <p>
+        In this project, we reproduced and analyzed the DNN add-on framework
+        proposed in <a class="citation" href="#ref-1">[1]</a> for impromptu
+        trajectory tracking. The theoretical part was reviewed in detail. The
+        simulation results in Section 5 were also successfully reproduced.
+        Further simulation-based exploration confirms the good generalization
+        ability of the DNN add-on module. The robustness under extreme
+        conditions was discussed and remained an open question. Overall, this
+        project supports the main conclusion of
+        <a class="citation" href="#ref-1">[1]</a>: a theory-guided DNN add-on
+        design can improve tracking performance effectively while keeping the
+        framework relatively simple and economical.
+      </p>
     </div>
 
-    <!-- Step 7 End: Add your paper conclusion -->
+    <div class="content-section" id="references">
+      <h2>References</h2>
 
-    <!-- Step 8 Start: Add your paper references -->
+      <ol class="references">
+        <li id="ref-1">
+          S. Zhou, M. Helwa, and A. Schoellig, “Deep neural networks as add-on
+          modules for enhancing robot performance in impromptu trajectory
+          tracking,” <em>The International Journal of Robotics Research</em>,
+          vol. 39, p. 027836492095390, Sep. 2020, doi:
+          <a
+            href="https://doi.org/10.1177/0278364920953902"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            10.1177/0278364920953902 </a
+          >.
+        </li>
 
-    <!-- 
-    Please only edit below between CODE tags - TODOs
-    Remove this step if not applicable
-    -->
-    <div class="content-section" id="References">
-	  <h2>References</h2>
+        <li id="ref-2">
+          Q. Li, J. Qian, Z. Zhu, X. Bao, M. K. Helwa, and A. P. Schoellig,
+          “Deep Neural Networks for Improved, Impromptu Trajectory Tracking of
+          Quadrotors,” Jul. 20, 2017, arXiv: arXiv:1610.06283, doi:
+          <a
+            href="https://doi.org/10.48550/arXiv.1610.06283"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            10.48550/arXiv.1610.06283 </a
+          >.
+        </li>
 
-	  <ol class="references">
-		<li id="ref-1">
-		  S. Zhou, M. Helwa, and A. Schoellig,
-		  “Deep neural networks as add-on modules for enhancing robot performance in impromptu trajectory tracking,”
-		  <em>The International Journal of Robotics Research</em>,
-		  vol. 39, p. 027836492095390, Sep. 2020,
-		  doi:
-		  <a href="https://doi.org/10.1177/0278364920953902" target="_blank" rel="noopener noreferrer">
-			10.1177/0278364920953902
-		  </a>.
-		</li>
+        <li id="ref-3">
+          T. Canada, “Registering your drone: Overview,” AARV. Accessed: Apr.
+          23, 2026. [Online]. Available:
+          <a
+            href="https://tc.canada.ca/en/aviation/drone-safety/registering-your-drone"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Transport Canada
+          </a>
+        </li>
 
-		<li id="ref-2">
-		  Q. Li, J. Qian, Z. Zhu, X. Bao, M. K. Helwa, and A. P. Schoellig,
-		  “Deep Neural Networks for Improved, Impromptu Trajectory Tracking of Quadrotors,”
-		  Jul. 20, 2017, arXiv: arXiv:1610.06283,
-		  doi:
-		  <a href="https://doi.org/10.48550/arXiv.1610.06283" target="_blank" rel="noopener noreferrer">
-			10.48550/arXiv.1610.06283
-		  </a>.
-		</li>
-
-		<li id="ref-3">
-		  T. Canada,
-		  “Registering your drone: Overview,”
-		  AARV. Accessed: Apr. 23, 2026. [Online].
-		  Available:
-		  <a href="https://tc.canada.ca/en/aviation/drone-safety/registering-your-drone"
-			 target="_blank" rel="noopener noreferrer">
-			Transport Canada
-		  </a>.
-		</li>
-
-		<li id="ref-4">
-		  “Z-transform,”
-		  <em>Wikipedia</em>. Feb. 22, 2026. Accessed: Apr. 23, 2026. [Online].
-		  Available:
-		  <a href="https://en.wikipedia.org/w/index.php?title=Z-transform&oldid=1339892924"
-			 target="_blank" rel="noopener noreferrer">
-			Wikipedia: Z-transform
-		  </a>.
-		</li>
-	  </ol>
-	</div>
-
-
-    <!-- Step 8 End: Add your paper references -->
-
-    <!-- Step 9 Start: Add your paper acknowledgement -->
-
-    <!-- 
-    Please do not remove below H2 heading tag. Add your HTML code after H2 HTML tag or add text inside P HTML tag. 
-    Remove this step if not applicable
-    -->
+        <li id="ref-4">
+          “Z-transform,” <em>Wikipedia</em>. Feb. 22, 2026. Accessed: Apr. 23,
+          2026. [Online]. Available:
+          <a
+            href="https://en.wikipedia.org/w/index.php?title=Z-transform&oldid=1339892924"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Wikipedia: Z-transform
+          </a>
+        </li>
+      </ol>
+    </div>
 
     <div class="content-section" id="acknowledgement">
       <h2>Acknowledgement</h2>
-      <p>The author would like to thank Professor Mo Chen and the teaching assistants for their support and suggestions throughout the project. Their guidance helped the author better understand the scope and direction of the report. The author is also grateful that the course selected such a rich and meaningful paper, which provided both theoretical depth and practical insights.
 
-</p>
+      <p>
+        The author would like to thank Professor Mo Chen and the teaching
+        assistants for their support and suggestions throughout the project.
+        Their guidance helped the author better understand the scope and
+        direction of the report. The author is also grateful that the course
+        selected such a rich and meaningful paper, which provided both
+        theoretical depth and practical insights.
+      </p>
     </div>
 
-    <!-- Step 9 End: Add your paper acknowledgement -->
-
     <div class="footer">
-      <!-- Step 10 Start: Edit footer -->
       <p>© 2026 [James Yuan, Simon Fraser University]. All rights reserved.</p>
-      <!-- Step 10 End: Edit footer -->
-      <!-- Please do not remove below code. -->
+
       <p>
-        This page was built using the template from iNdra-GitHub-Page-Template-For-Resarch
+        This page was built using the template from
         <a
           href="https://github.com/indramal/iNdra-GitHub-Page-Template-For-Resarch"
-          >here</a
+          target="_blank"
+          rel="noopener noreferrer"
+          >iNdra-GitHub-Page-Template-For-Resarch</a
         >.
       </p>
-       <div>
-          <!-- Please remove below code of page count or edit indragithubpagetemplate with your name. -->
-    
-</div>
+    </div>
 
-    <!-- Do not edit below button -->
     <button class="scrollUpBtn" id="scrollUpBtn" onclick="scrollToTop()">
       ⬆
     </button>
