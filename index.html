@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta
       name="keywords"
-      content="research papers, academic papers, AI research, robotics research, machine learning, published papers, scientific papers, academic journals"
+      content="impromptu trajectory tracking, neural networks"
     />
     <!-- <meta name="author" content="Research Paper Platform" />
     <meta name="robots" content="index, follow" />
@@ -119,7 +119,7 @@
         </p>
         <p>
           <sup>1</sup
-          ><a href="mailto:example1@email.com">jya276@sfu.ca</a><!--,
+          ><a href="mailto:jya276@sfu.ca">jya276@sfu.ca</a><!--,
           <sup>2</sup
           ><a href="mailto:example2@email.com">TODO:email2@email.com</a>-->
         </p>
@@ -183,7 +183,7 @@
 
     <div class="abstract" id="abstract">
       <h2>Abstract</h2>
-      <p>TODO: Add Abstract</p>
+      <p>This project studies a DNN add-on framework for improving impromptu trajectory tracking. The main goal is to understand and reproduce the theoretical and simulation results in [1], with a focus on the inverse-dynamics interpretation of the DNN module, the related necessary conditions, and the input selection principles. Since the original quadrotor platform is hard to reproduce directly, this project focuses on simulation-based reproduction and further exploration. Section 5 of [1] is reproduced using MATLAB, and the results are highly consistent with those reported in the original paper. In addition, several extended simulations are conducted to examine the effect of input design, robustness to trajectory scaling, and generalization to hand-drawn letter trajectories. The results show that the DNN add-on can significantly reduce tracking error with low computational cost when the theoretical conditions are satisfied, while also revealing some practical boundaries of its robustness in extreme cases.</p>
     </div>
 
     <!-- Step 3 End: Add your paper abstract -->
@@ -199,9 +199,9 @@
       <h2>Introduction</h2>
       <p>Trajectory tracking is an important problem in robotic control and has been widely applied in both industrial and civilian domains. Some examples include high-precision robotic manipulators and unmanned aerial vehicles (e.g., quadrotors) for search and rescue. In this project, we reproduce the study in reference [1], which investigates a particular setting of this problem, referred to as impromptu trajectory tracking.</p>
 	  <p>The core idea of [1] is to use a DNN as an add-on module placed before a stabilized baseline control system to improve impromptu trajectory tracking. In accordance with the proposal and practical constraints, the project mainly consists of three parts.<br>
-		1) Theory. Since the theoretical part accounts for roughly 35% of paper [1], the theoretical sections of the paper will be analyzed in detail. The more difficult arguments will be further derived and clarified in this final report.<br>
-		2) Reproduction. Section 5 of [1] was fully reproduced in simulation.<br>
-		3) Simulation-based exploration. The project will demonstrate the generalization capability of the proposed method and exploring its potential boundaries.
+		<li>1) Theory. Since the theoretical part accounts for roughly 35% of paper [1], the theoretical sections of the paper will be analyzed in detail. The more difficult arguments will be further derived and clarified in this final report.</li>
+		<li>2) Reproduction. Section 5 of [1] was fully reproduced in simulation.</li>
+		<li>3) Simulation-based exploration. The project will demonstrate the generalization capability of the proposed method and exploring its potential boundaries.</li>
 		</p>
     </div>
 
@@ -345,13 +345,6 @@
 
 		<p>Here, the nonnegative integer <code>k</code> is the discrete-time index, <code>x ∈ R^n</code> is the system state, <code>u ∈ R^m</code> is the reference signal (control), and <code>y ∈ R^m</code> is the system output. <code>A</code>, <code>B</code>, and <code>C</code> are constant. The explicit form of Eq. (1) is shown below, which is more convenient for coding:</p>
 
-		<p>
-			<b>Explicit Dimensions:</b><br>
-			<code>
-				x<sub>n×1</sub>(k+1) = A<sub>n×n</sub> ⋅ x<sub>n×1</sub>(k) + B<sub>n×m</sub> ⋅ u<sub>m×1</sub>(k)<br>
-				y<sub>m×1</sub>(k) = C<sub>m×n</sub> ⋅ x<sub>n×1</sub>(k)
-			</code>
-		</p>
 
 		<p>The nonlinear version of Eq. (1) is given in Eq. (2). Its state-space model is:</p>
 
