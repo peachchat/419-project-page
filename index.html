@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Main Step: Edit below title -->
-    <title>TODO: Paper Title</title>
+    <title>Theoretical Analysis, Reproduction, and Simulation-Based Exploration of a DNN Add-on Framework for Enhancing Impromptu Trajectory Tracking</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="" />
@@ -103,32 +103,32 @@
     -->
 
     <div class="header">
-      <h1>TODO: Paper Title</h1>
+      <h1>Theoretical Analysis, Reproduction, and Simulation-Based Exploration of a DNN Add-on Framework for Enhancing Impromptu Trajectory Tracking</h1>
       <div class="authors">
         <p>
-          <a href="#">TODO: Author name 1</a><sup>1</sup>,
+          <a href="#">James Yuan</a><sup>1</sup><!--,
           <a href="#">TODO: Author name 2</a><sup>*1,3</sup>,
           <a href="#">TODO: Author name 3</a><sup>*2</sup>,
           <a href="#">TODO: Author name 4</a><sup>*1</sup>,
           <a href="#">TODO: Author name 5</a><sup>2</sup>,
-          <a href="#">TODO: Author name 6</a><sup>1</sup>
+          <a href="#">TODO: Author name 6</a><sup>1</sup>-->
         </p>
         <p>
-          <sup>1</sup>TODO: University name 1 &nbsp;&nbsp; <sup>2</sup>TODO:
-          University name 2&nbsp;&nbsp; <sup>3</sup>TODO: University name 3
+          <sup>1</sup>Simon Fraser University<!-- &nbsp;&nbsp; <sup>2</sup>TODO:
+          University name 2&nbsp;&nbsp; <sup>3</sup>TODO: University name 3-->
         </p>
         <p>
           <sup>1</sup
-          ><a href="mailto:example1@email.com">TODO:email1@email.com</a>,
+          ><a href="mailto:example1@email.com">jya276@sfu.ca</a><!--,
           <sup>2</sup
-          ><a href="mailto:example2@email.com">TODO:email2@email.com</a>
+          ><a href="mailto:example2@email.com">TODO:email2@email.com</a>-->
         </p>
         <p>
-          <em>*Equal Contribution</em
+          <!--<em>*Equal Contribution</em-->
           ><!-- Remove if not applicable -->
         </p>
-        <p>📌 Conference on TODO: Conference name, 2023 (Oral Talk)</p>
-        <p>📌 Presented at TODO: Conference name 2024, Yokohama, Japan.</p>
+        <!--<p>📌 Conference on TODO: Conference name, 2023 (Oral Talk)</p>
+        <p>📌 Presented at TODO: Conference name 2024, Yokohama, Japan.</p>-->
       </div>
     </div>
 
@@ -143,12 +143,12 @@
     -->
 
     <div class="buttons">
-      <a href="#" target="_blank">Paper</a>
-      <a href="#" target="_blank">Videos</a>
+      <a href="https://www.dynsyslab.org/wp-content/papercite-data/pdf/zhou-ijrr20.pdf" target="_blank">Paper</a>
+      <!--<a href="#" target="_blank">Videos</a>-->
       <a href="#" target="_blank">Code</a>
-      <a href="#" target="_blank">Dataset</a>
-      <a href="#" target="_blank">Model</a>
-      <a href="#bibtex">BibTex</a>
+      <!--<a href="#" target="_blank">Dataset</a>-->
+      <!--<a href="#" target="_blank">Model</a>-->
+      <!--<a href="#bibtex">BibTex</a>-->
     </div>
 
     <!-- Step 2 End: Button for links -->
@@ -160,7 +160,7 @@
     Remove this step if not applicable
     -->
 
-    <!-- Single YouTube Video -->
+    <!-- Single YouTube Video 
     <div class="video-section">
       <h3>Demo Video</h3>
       <div class="video-container">
@@ -179,7 +179,7 @@
         TODO: This is the short explanation paragraph of the video. Add your
         paragraph here if required
       </p>
-    </div>
+    </div>-->
 
     <div class="abstract" id="abstract">
       <h2>Abstract</h2>
@@ -197,7 +197,12 @@
 
     <div class="content-section" id="introduction">
       <h2>Introduction</h2>
-      <p>TODO: Add Introduction</p>
+      <p>Trajectory tracking is an important problem in robotic control and has been widely applied in both industrial and civilian domains. Some examples include high-precision robotic manipulators and unmanned aerial vehicles (e.g., quadrotors) for search and rescue. In this project, we reproduce the study in reference [1], which investigates a particular setting of this problem, referred to as impromptu trajectory tracking.</p>
+	  <p>The core idea of [1] is to use a DNN as an add-on module placed before a stabilized baseline control system to improve impromptu trajectory tracking. In accordance with the proposal and practical constraints, the project mainly consists of three parts.<br>
+		1) Theory. Since the theoretical part accounts for roughly 35% of paper [1], the theoretical sections of the paper will be analyzed in detail. The more difficult arguments will be further derived and clarified in this final report.<br>
+		2) Reproduction. Section 5 of [1] was fully reproduced in simulation.<br>
+		3) Simulation-based exploration. The project will demonstrate the generalization capability of the proposed method and exploring its potential boundaries.
+		</p>
     </div>
 
     <!-- Step 4 End: Add your paper introduction -->
@@ -209,13 +214,100 @@
     Remove this step if not applicable
     -->
 
-    <div class="content-section" id="methodology">
-      <h2>Methodology</h2>
+    <div class="content-section" id="related_work">
+      <h2>Summary of Related Work</h2>
       <p>TODO: Add Methodology</p>
-      <ul>
-        <li>TODO</li>
-        <li>TODO</li>
-      </ul>
+	  
+	 
+
+	<head>
+	<meta charset="UTF-8">
+	<style>
+	table {
+	  border-collapse: collapse;
+	  width: 700px;
+	  font-family: Arial, sans-serif;
+	}
+
+	th {
+	  background-color: #4f79a7;
+	  color: white;
+	  padding: 10px;
+	  font-size: 18px;
+	}
+
+	td {
+	  border: 1px solid #999;
+	  padding: 10px;
+	  vertical-align: top;
+	}
+
+	.method {
+	  width: 200px;
+	  font-weight: bold;
+	  background-color: #c9d6e8;
+	}
+
+	.row-light {
+	  background-color: #dfe7f3;
+	}
+
+	.highlight {
+	  background-color: #17a2cc;
+	  color: black;
+	  font-weight: bold;
+	}
+	</style>
+	</head>
+
+	<body>
+
+	<table>
+	  <tr>
+		<th>Method</th>
+		<th>Main strengths / limitations</th>
+	  </tr>
+
+	  <tr class="row-light">
+		<td class="method">Direct inverse control</td>
+		<td>
+		  ✓ Simple<br>
+		  ✗ Less robust to disturbances<br>
+		  ✗ Training not directly aligned with tracking error
+		</td>
+	  </tr>
+
+	  <tr>
+		<td class="method">Feedback-error learning</td>
+		<td>
+		  ✓ More robust<br>
+		  ✓ More goal-directed<br>
+		  ✗ Requires plant-in-the-loop training
+		</td>
+	  </tr>
+
+	  <tr class="row-light">
+		<td class="method">Adaptive inverse control</td>
+		<td>
+		  ✓ Online adaptation<br>
+		  ✓ Stability guarantees<br>
+		  ✗ High online cost
+		</td>
+	  </tr>
+
+	  <tr class="highlight">
+		<td>Proposed<br>DNN add-on<br>approach</td>
+		<td>
+		  ✓ Uses a stabilized closed-loop baseline<br>
+		  ✓ Less prone to instability<br>
+		  ✓ Easier to train<br>
+		  ✓ Better suited for impromptu trajectory tracking
+		</td>
+	  </tr>
+	</table>
+
+	</body>
+	  
     </div>
 
     <!-- Step 5 End: Add your paper methodology -->
@@ -238,42 +330,136 @@
     -> Replace below <iframe></iframe> tag with your code
     -->
 
-    <div class="content-section" id="results">
-      <h2>Results</h2>
-      <p>TODO: Add Results</p>
-      <ul>
-        <li>TODO</li>
-        <li>TODO</li>
-      </ul>
-    </div>
+    <div class="content-section" id="Theory">
+		<h2>Results</h2>
+		
+		<p>In [1], the baseline system is modeled as a multi-input–multi-output (MIMO) system, and Eq. (1) is a linear time-invariant model. The state space model is:</p>
+
+		<p>
+			<b>Linear Time-Invariant Model:</b><br>
+			<code>
+				x(k+1) = A ⋅ x(k) + B ⋅ u(k)<br>
+				y(k) = C ⋅ x(k)
+			</code>
+		</p>
+
+		<p>Here, the nonnegative integer <code>k</code> is the discrete-time index, <code>x ∈ R^n</code> is the system state, <code>u ∈ R^m</code> is the reference signal (control), and <code>y ∈ R^m</code> is the system output. <code>A</code>, <code>B</code>, and <code>C</code> are constant. The explicit form of Eq. (1) is shown below, which is more convenient for coding:</p>
+
+		<p>
+			<b>Explicit Dimensions:</b><br>
+			<code>
+				x<sub>n×1</sub>(k+1) = A<sub>n×n</sub> ⋅ x<sub>n×1</sub>(k) + B<sub>n×m</sub> ⋅ u<sub>m×1</sub>(k)<br>
+				y<sub>m×1</sub>(k) = C<sub>m×n</sub> ⋅ x<sub>n×1</sub>(k)
+			</code>
+		</p>
+
+		<p>The nonlinear version of Eq. (1) is given in Eq. (2). Its state-space model is:</p>
+
+		<p>
+			<b>Nonlinear Model:</b><br>
+			<code>
+				x(k+1) = f(x(k)) + g(x(k)) ⋅ u(k)<br>
+				y(k) = h(x(k))
+			</code>
+		</p>
+		<h3>Assumptions</h3>
+		<ul>
+			<li><b>(A1) Stable:</b> Bounded inputs lead to bounded states.</li>
+			<li><b>(A2) Future desired trajectory:</b> The future desired trajectory is available.</li>
+			<li><b>(A3) DNN Smoothness:</b> The DNN has smooth output with respect to inputs (globally Lipschitz).</li>
+		</ul>
+
+		<h3>Definitions</h3>
+		<ul>
+			<li><b>Vector Relative Degree (VRR):</b> The number of steps before some input <code>u</code> affects some output <code>y</code>.</li>
+			<li><b>Full-Rank Decoupling Matrix:</b> Outputs respond independently enough to solve for the control input.</li>
+		</ul>
+	</div>
+	
+	<div class="content-section" id="Simulation">
+	  <h2>Simulation</h2>
+
+	  <p>
+		We reproduce the simulation presented in Section 5 of [1] to illustrate
+		Insights 4.1, 4.2, and 4.3. Two linear MIMO baseline closed-loop systems
+		are considered, with the same state equation as below.
+	  </p>
+
+	  <div class="equation">
+		\[
+		x(k+1)=
+		\begin{bmatrix}
+		0.2 & 1 & 0 \\
+		0 & 0.5 & 0 \\
+		0 & 0 & 0.6
+		\end{bmatrix}x(k)
+		+
+		\begin{bmatrix}
+		0 & 0 \\
+		1 & 0 \\
+		0 & 0.5
+		\end{bmatrix}u(k)
+		\]
+	  </div>
+
+	  <p>
+		It is not hard to see that the matrix \(A\) of the baseline system is
+		upper triangular, so its eigenvalues are its diagonal entries. Moreover,
+		since all these eigenvalues lie inside the unit circle \((<1)\), they
+		correspond to three stable poles. The output equations of the two systems
+		are defined in Eq. (29) and (30), respectively.
+	  </p>
+
+	  <div class="equation">
+		\[
+		y(k)=
+		\begin{bmatrix}
+		0.35 & 0.35 & 0 \\
+		0 & 0 & 0.5
+		\end{bmatrix}x(k)
+		\tag{29}
+		\]
+	  </div>
+
+	  <div class="equation">
+		\[
+		y(k)=
+		\begin{bmatrix}
+		-0.35 & 0.35 & 0 \\
+		0 & 0 & 0.5
+		\end{bmatrix}x(k)
+		\tag{30}
+		\]
+	  </div>
+	</div>
 
     <!-- 3 Images Carousel -->
     <h3>Image Gallery</h3>
     <div class="carousel-container" id="imageCarousel">
       <div class="carousel-track">
         <div class="carousel-slide">
-          <img src="Assets/Photo1.jpg" alt="Slide 1" />
+          <img src="Assets/Figure2Reproduction.png" alt="Slide 1" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo2.jpg" alt="Slide 2" />
+          <img src="Assets/Figure2Paper.png" alt="Slide 2" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo3.jpg" alt="Slide 3" />
+          <img src="Assets/Figure3Reproduction.png" alt="Slide 3" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo4.jpg" alt="Slide 4" />
+          <img src="Assets/Figure3Paper.png" alt="Slide 4" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo5.jpg" alt="Slide 5" />
+          <img src="Assets/Figure4Reproduction.png" alt="Slide 5" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo6.jpg" alt="Slide 6" />
+          <img src="Assets/Figure4Paper.png" alt="Slide 6" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo7.jpg" alt="Slide 7" />
+          <img src="Assets/Fig.5.jpg" alt="Slide 7" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo8.jpg" alt="Slide 8" />
+          <img src="Assets/Fig.6.jpg" alt="Slide 8" />
         </div>
       </div>
       <button class="carousel-button prev">←</button>
@@ -281,121 +467,7 @@
       <div class="carousel-indicators"></div>
     </div>
 
-    <!-- 3 Videos Carousel -->
-    <h3>Video Gallery</h3>
-    <div class="carousel-container" id="videoCarousel">
-      <div class="carousel-track">
-        <div class="carousel-slide">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Bhg3uOx9ZPw?si=4Ie__ntcTSvRRi4y"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="carousel-slide">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/xjRALKy6Ajw?si=EMrMe_v9fXOjhi_J"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="carousel-slide">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/aaTUS5Aa8F0?si=NUvuwq8-SzC5RuqQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="carousel-slide">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/JficcrhnO78?si=8SryP_KFQ0orNyMt"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="carousel-slide">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/kEdr0ARq48A?si=ADLxnzCBkTDQm28o"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="carousel-slide">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/v_ulHMfDUco?si=0fJGN4AmWj_zP-Ik"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <button class="carousel-button prev">←</button>
-      <button class="carousel-button next">→</button>
-      <div class="carousel-indicators"></div>
-    </div>
-
-    <!-- Single YouTube Video -->
-    <div class="video-section">
-      <h3>Demo Video</h3>
-      <div class="video-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/ysFav0b472w?si=Rxxp3R6_tkBXAEmP"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-
-    <!-- YouTube Video List -->
-    <div class="video-section">
-      <h3>Demo Videos List</h3>
-      <div class="video-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/videoseries?si=Alenj7M9_gg7Xv49&amp;list=PL95lT3XlM14SgZHmmKn1mGSAAQc8ycq8v"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
+    
 
     <!-- Step 6 End: Add your paper results -->
 
@@ -408,7 +480,7 @@
 
     <div class="content-section" id="conclusion">
       <h2>Conclusion</h2>
-      <p>TODO: Add Conclusion</p>
+      <p>In this project, we reproduced and analyzed the DNN add-on framework proposed in [1] for impromptu trajectory tracking. The theoretical part was reviewed in detail. The simulation results in Section 5 were also successfully reproduced. Further simulation-based exploration confirms the good generalization ability of the DNN add-on module. The robustness under extreme conditions was discussed and remained an open question. Overall, this project supports the main conclusion of [1]: a theory-guided DNN add-on design can improve tracking performance effectively while keeping the framework relatively simple and economical.</p>
     </div>
 
     <!-- Step 7 End: Add your paper conclusion -->
@@ -419,25 +491,54 @@
     Please only edit below between CODE tags - TODOs
     Remove this step if not applicable
     -->
+    <div class="content-section" id="References">
+	  <h2>References</h2>
 
-    <div class="bibtex-section" id="bibtex">
-      <h2>BibTeX</h2>
-      <button class="bibtex-copy-button" onclick="copyBibTeX()">
-        Copy to Clipboard
-      </button>
-      <pre>
-        <!-- Please edit only below details -->
-        <code class="language-bibtex">
-          @inproceedings{TODO: YourPaperCitation,
-            title={TODO: Paper Title},
-            author={[TODO: Author Names]},
-            booktitle={[TODO: Conference Name]},
-            year={TODO: 2024},
-            pages={[pages]}
-          }
-        </code>
-      </pre>
-    </div>
+	  <ol class="references">
+		<li id="ref-1">
+		  S. Zhou, M. Helwa, and A. Schoellig,
+		  “Deep neural networks as add-on modules for enhancing robot performance in impromptu trajectory tracking,”
+		  <em>The International Journal of Robotics Research</em>,
+		  vol. 39, p. 027836492095390, Sep. 2020,
+		  doi:
+		  <a href="https://doi.org/10.1177/0278364920953902" target="_blank" rel="noopener noreferrer">
+			10.1177/0278364920953902
+		  </a>.
+		</li>
+
+		<li id="ref-2">
+		  Q. Li, J. Qian, Z. Zhu, X. Bao, M. K. Helwa, and A. P. Schoellig,
+		  “Deep Neural Networks for Improved, Impromptu Trajectory Tracking of Quadrotors,”
+		  Jul. 20, 2017, arXiv: arXiv:1610.06283,
+		  doi:
+		  <a href="https://doi.org/10.48550/arXiv.1610.06283" target="_blank" rel="noopener noreferrer">
+			10.48550/arXiv.1610.06283
+		  </a>.
+		</li>
+
+		<li id="ref-3">
+		  T. Canada,
+		  “Registering your drone: Overview,”
+		  AARV. Accessed: Apr. 23, 2026. [Online].
+		  Available:
+		  <a href="https://tc.canada.ca/en/aviation/drone-safety/registering-your-drone"
+			 target="_blank" rel="noopener noreferrer">
+			Transport Canada
+		  </a>.
+		</li>
+
+		<li id="ref-4">
+		  “Z-transform,”
+		  <em>Wikipedia</em>. Feb. 22, 2026. Accessed: Apr. 23, 2026. [Online].
+		  Available:
+		  <a href="https://en.wikipedia.org/w/index.php?title=Z-transform&oldid=1339892924"
+			 target="_blank" rel="noopener noreferrer">
+			Wikipedia: Z-transform
+		  </a>.
+		</li>
+	  </ol>
+	</div>
+
 
     <!-- Step 8 End: Add your paper references -->
 
@@ -450,18 +551,20 @@
 
     <div class="content-section" id="acknowledgement">
       <h2>Acknowledgement</h2>
-      <p>TODO: Add Acknowledgement if applicable or remove this</p>
+      <p>The author would like to thank Professor Mo Chen and the teaching assistants for their support and suggestions throughout the project. Their guidance helped the author better understand the scope and direction of the report. The author is also grateful that the course selected such a rich and meaningful paper, which provided both theoretical depth and practical insights.
+
+</p>
     </div>
 
     <!-- Step 9 End: Add your paper acknowledgement -->
 
     <div class="footer">
       <!-- Step 10 Start: Edit footer -->
-      <p>© 2024 [TODO: Add Name or University]. All rights reserved.</p>
+      <p>© 2026 [James Yuan, Simon Fraser University]. All rights reserved.</p>
       <!-- Step 10 End: Edit footer -->
       <!-- Please do not remove below code. -->
       <p>
-        Website template free to borrow from
+        This page was built using the template from iNdra-GitHub-Page-Template-For-Resarch
         <a
           href="https://github.com/indramal/iNdra-GitHub-Page-Template-For-Resarch"
           >here</a
@@ -469,7 +572,7 @@
       </p>
        <div>
           <!-- Please remove below code of page count or edit indragithubpagetemplate with your name. -->
-    <img src="https://profile-counter.glitch.me/indragithubpagetemplate/count.svg" alt="Profile Counter">
+    
 </div>
 
     <!-- Do not edit below button -->
