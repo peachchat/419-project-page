@@ -95,7 +95,7 @@
       <div class="authors">
         <p><a href="#"></a><sup>James Yuan</sup></p>
         <p><sup>Simon Fraser University</sup></p>
-        <p><sup></sup><a href="mailto:jya276@sfu.ca"></a>jya276@sfu.ca</p>
+        <p><sup></sup><a href="mailto:jya276@sfu.ca">jya276@sfu.ca</a></p>
       </div>
     </div>
 
@@ -308,131 +308,194 @@
       </ul>
     </div>
 
-    <div class="content-section" id="simulation">
-      <h2>Simulation</h2>
+	<div class="content-section" id="simulation">
+	  <h2>Simulation</h2>
 
-      <p>
-        We reproduce the simulation presented in Section 5 of
-        <a class="citation" href="#ref-1">[1]</a> to illustrate Insights 4.1,
-        4.2, and 4.3. Two linear MIMO baseline closed-loop systems are
-        considered, with the same state equation as below.
-      </p>
+	  <p>
+		We reproduce the simulation presented in Section 5 of
+		<a class="citation" href="#ref-1">[1]</a> to illustrate Insights 4.1,
+		4.2, and 4.3. Two linear MIMO baseline closed-loop systems are considered,
+		with the same state equation as below.
+	  </p>
 
-      <div class="equation">
-        \[
-        x(k+1)=
-        \begin{bmatrix}
-        0.2 & 1 & 0 \\
-        0 & 0.5 & 0 \\
-        0 & 0 & 0.6
-        \end{bmatrix}x(k)
-        +
-        \begin{bmatrix}
-        0 & 0 \\
-        1 & 0 \\
-        0 & 0.5
-        \end{bmatrix}u(k).
-        \]
-      </div>
+	  <div class="equation">
+		\[
+		x(k+1)=
+		\begin{bmatrix}
+		0.2 & 1 & 0 \\
+		0 & 0.5 & 0 \\
+		0 & 0 & 0.6
+		\end{bmatrix}x(k)
+		+
+		\begin{bmatrix}
+		0 & 0 \\
+		1 & 0 \\
+		0 & 0.5
+		\end{bmatrix}u(k).
+		\]
+	  </div>
 
-      <p>
-        It is not hard to see that the matrix \(A\) of the baseline system is
-        upper triangular, so its eigenvalues are its diagonal entries. Moreover,
-        since all these eigenvalues lie inside the unit circle, they correspond
-        to three stable poles. The output equations of the two systems are
-        defined in Eq. (29) and Eq. (30), respectively.
-      </p>
+	  <p>
+		It is not hard to see that the matrix \(A\) of the baseline system is upper
+		triangular, so its eigenvalues are its diagonal entries. Moreover, since all
+		these eigenvalues lie inside the unit circle, they correspond to three stable
+		poles. The output equations of the two systems are defined in Eq. (29) and
+		Eq. (30), respectively.
+	  </p>
 
-      <div class="equation">
-        \[
-        y(k)=
-        \begin{bmatrix}
-        0.35 & 0.35 & 0 \\
-        0 & 0 & 0.5
-        \end{bmatrix}x(k).
-        \tag{29}
-        \]
-      </div>
+	  <div class="equation no-scroll-equation">
+		\[
+		y(k)=
+		\begin{bmatrix}
+		0.35 & 0.35 & 0 \\
+		0 & 0 & 0.5
+		\end{bmatrix}x(k).
+		\tag{29}
+		\]
+	  </div>
 
-      <div class="equation">
-        \[
-        y(k)=
-        \begin{bmatrix}
-        -0.35 & 0.35 & 0 \\
-        0 & 0 & 0.5
-        \end{bmatrix}x(k).
-        \tag{30}
-        \]
-      </div>
+	  <div class="equation no-scroll-equation">
+		\[
+		y(k)=
+		\begin{bmatrix}
+		-0.35 & 0.35 & 0 \\
+		0 & 0 & 0.5
+		\end{bmatrix}x(k).
+		\tag{30}
+		\]
+	  </div>
 
-      <h3>Simulation Figures</h3>
+	  <h3>
+		A. Simulation 1: Illustrations of Underlying Function and Necessary
+		Condition
+	  </h3>
 
-      <p>
-        The following figures are placed in the simulation section because they
-        correspond to the reproduced simulation results.
-      </p>
+	  <p>
+		The training set consists of 25 sinusoidal trajectories with different
+		combinations of amplitudes and frequencies. The amplitudes are randomly
+		selected from the range 1 to 5, and the frequencies are randomly selected
+		from 0.024 to 1.25 Hz.
+	  </p>
 
-      <div class="carousel-container" id="imageCarousel">
-        <div class="carousel-track">
-          <div class="carousel-slide">
-            <figure>
-              <img
-                src="Assets/Figure2Reproduction.png"
-                alt="Figure 2 reproduction"
-              />
-              <figcaption>Figure 2 reproduction</figcaption>
-            </figure>
-          </div>
+	  <p>
+		The DNN modules are fully connected feedforward networks with two hidden
+		layers, where each hidden layer consists of 20 hyperbolic tangent activation
+		units.
+	  </p>
 
-          <div class="carousel-slide">
-            <figure>
-              <img src="Assets/Figure2Paper.png" alt="Figure 2 from paper" />
-              <figcaption>Figure 2 from paper</figcaption>
-            </figure>
-          </div>
+	  <p>
+		Once the DNN modules are trained, we evaluate the DNN-enhanced system's
+		performance by testing it on a new trajectory that was not included in the
+		training set:
+	  </p>
 
-          <div class="carousel-slide">
-            <figure>
-              <img
-                src="Assets/Figure3Reproduction.png"
-                alt="Figure 3 reproduction"
-              />
-              <figcaption>Figure 3 reproduction</figcaption>
-            </figure>
-          </div>
+	  <div class="equation">
+		\[
+		y_{d,1}(t)
+		=
+		\sin\left(\frac{4\pi}{33}t\right)
+		+
+		\cos\left(\frac{4\pi}{41}t\right)
+		-1
+		\]
+	  </div>
 
-          <div class="carousel-slide">
-            <figure>
-              <img src="Assets/Figure3Paper.png" alt="Figure 3 from paper" />
-              <figcaption>Figure 3 from paper</figcaption>
-            </figure>
-          </div>
+	  <div class="equation">
+		\[
+		y_{d,2}(t)
+		=
+		\sin\left(\frac{4\pi}{23}t\right)
+		+
+		\cos\left(\frac{4\pi}{21}t\right)
+		-1
+		\]
+	  </div>
 
-          <div class="carousel-slide">
-            <figure>
-              <img
-                src="Assets/Figure4Reproduction.png"
-                alt="Figure 4 reproduction"
-              />
-              <figcaption>Figure 4 reproduction</figcaption>
-            </figure>
-          </div>
+	  <p>
+		Our objective is to train the DNN modules to approximate the inverse
+		dynamics of the baseline systems. In the first set of simulations, the state
+		space approach, corresponding to Insight 4.2, is examined.
+	  </p>
 
-          <div class="carousel-slide">
-            <figure>
-              <img src="Assets/Figure4Paper.png" alt="Figure 4 from paper" />
-              <figcaption>Figure 4 from paper</figcaption>
-            </figure>
-          </div>
-        </div>
+	  <p>
+		The references and outputs of the DNN-enhanced tracking for system (29) and
+		system (30) are shown in Figures 2 and 3, respectively, with our
+		reproduction placed on the left and the original figures from
+		<a class="citation" href="#ref-1">[1]</a> on the right for reference. For
+		the minimum phase system (29), the RMS modeling error of the DNN module is
+		\(8.86 \times 10^{-5}\). The RMS tracking errors of the baseline system,
+		using the desired trajectory as reference input, and the DNN-enhanced system
+		are 1.02 and \(2.96 \times 10^{-5}\). These results show that the DNN
+		module designed according to Insight 4.2 is able to approximate the exact
+		inverse equation of the system with high accuracy, thereby achieving
+		approximately exact tracking.
+	  </p>
 
-        <button class="carousel-button prev" aria-label="Previous image">
-          ←
-        </button>
-        <button class="carousel-button next" aria-label="Next image">→</button>
-        <div class="carousel-indicators"></div>
-      </div>
-    </div>
+	  <div class="figure-gallery">
+		<div class="figure-pair">
+		  <figure>
+			<img
+			  src="Assets/Figure2Reproduction.png"
+			  alt="Figure 2 reproduction"
+			/>
+			<figcaption>Figure 2. Reproduction.</figcaption>
+		  </figure>
+
+		  <figure>
+			<img src="Assets/Figure2Paper.png" alt="Figure 2 from paper" />
+			<figcaption>Figure 2. Original from [1].</figcaption>
+		  </figure>
+		</div>
+
+		<div class="figure-pair">
+		  <figure>
+			<img
+			  src="Assets/Figure3Reproduction.png"
+			  alt="Figure 3 reproduction"
+			/>
+			<figcaption>Figure 3. Reproduction.</figcaption>
+		  </figure>
+
+		  <figure>
+			<img src="Assets/Figure3Paper.png" alt="Figure 3 from paper" />
+			<figcaption>Figure 3. Original from [1].</figcaption>
+		  </figure>
+		</div>
+	  </div>
+
+	  <h3>B. Simulation 2: Illustrations of the Transfer Function Approach</h3>
+
+	  <p>
+		In the second set of simulations, we focus on the transfer function approach,
+		corresponding to Insight 4.3, for the minimum phase system (29).
+	  </p>
+
+	  <p>
+		The DNN-enhanced system is evaluated on the same testing trajectory as that
+		used in Simulation 1. The RMS modeling error of the DNN module is
+		\(9.84 \times 10^{-3}\). The RMS tracking errors of the baseline system and
+		the DNN-enhanced system are 1.02 and \(3.31 \times 10^{-3}\). These results
+		shown in Figure 4 illustrate that the transfer function approach can also be
+		used to enhance the tracking performance of the minimum-phase system, while
+		avoiding the need for full state information required by the state-space
+		approach.
+	  </p>
+
+	  <div class="figure-pair">
+		<figure>
+		  <img
+			src="Assets/Figure4Reproduction.png"
+			alt="Figure 4 reproduction"
+		  />
+		  <figcaption>Figure 4. Reproduction.</figcaption>
+		</figure>
+
+		<figure>
+		  <img src="Assets/Figure4Paper.png" alt="Figure 4 from paper" />
+		  <figcaption>Figure 4. Original from [1].</figcaption>
+		</figure>
+	  </div>
+	</div>
 
     <div class="content-section" id="exploration">
       <h2>Exploration</h2>
